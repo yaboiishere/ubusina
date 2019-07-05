@@ -1,0 +1,9 @@
+<p id="notice"><%= notice %></p>
+<%= form_for :user,:controller =>'landing',:action => 'checkinfo', :method => "post" do |f| %>
+<%= f.label :Username %>
+<%= f.text_field :formUser%>
+<%= f.label :Password %>
+<%= f.text_field :formPass%>
+<%= f.submit 'Login' %>
+<% end %>
+

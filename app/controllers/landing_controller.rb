@@ -30,7 +30,7 @@ class LandingController < ApplicationController
 	def landing
 
 		puts "Cleared current user"
-		$currentUser.username = nil
+		$currentUser = User.find_by_username(:test)
 		puts $currentUser.username
 		
 	end
